@@ -1,4 +1,4 @@
-﻿var number = 4594;
+﻿var number = 1234567;
 var numberAsString = number.ToString();
 char[] letters = numberAsString.ToArray();
 
@@ -56,10 +56,15 @@ foreach (var letter in letters)
     }
     else if (letter == '8')
     {
+        counter8++;
+    }
+    else if (letter == '9')
+    {
         counter9++;
     }
-
 }
+
+Console.WriteLine("wynik dla liczby" + number);
 
 Console.WriteLine("0 =>" + counter0);
 Console.WriteLine("1 =>" + counter1);
